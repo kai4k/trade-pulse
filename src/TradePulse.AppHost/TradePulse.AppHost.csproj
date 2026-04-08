@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.3.0" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!-- KubernetesClient transitive dep from Aspire.Hosting — suppressed intentionally -->
+    <NoWarn>NU1902</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" />
+    <PackageReference Include="Aspire.Hosting.RabbitMQ" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TradePulse.Api\TradePulse.Api.csproj" />
+    <ProjectReference Include="..\TradePulse.Dashboard\TradePulse.Dashboard.csproj" />
+  </ItemGroup>
+
+</Project>

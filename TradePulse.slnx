@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/TradePulse.Api/TradePulse.Api.csproj" />
+    <Project Path="src/TradePulse.AppHost/TradePulse.AppHost.csproj" />
+    <Project Path="src/TradePulse.Application/TradePulse.Application.csproj" />
+    <Project Path="src/TradePulse.Dashboard/TradePulse.Dashboard.csproj" />
+    <Project Path="src/TradePulse.Domain/TradePulse.Domain.csproj" />
+    <Project Path="src/TradePulse.Infrastructure/TradePulse.Infrastructure.csproj" />
+    <Project Path="src/TradePulse.ServiceDefaults/TradePulse.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/TradePulse.Application.Tests/TradePulse.Application.Tests.csproj" />
+    <Project Path="tests/TradePulse.Domain.Tests/TradePulse.Domain.Tests.csproj" />
+    <Project Path="tests/TradePulse.Infrastructure.Tests/TradePulse.Infrastructure.Tests.csproj" />
+  </Folder>
+</Solution>

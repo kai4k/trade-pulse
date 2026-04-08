@@ -1,0 +1,13 @@
+<Project>
+  <!-- Import the root Directory.Build.props so all shared settings (Nullable, TreatWarningsAsErrors, etc.)
+       continue to apply to test projects.  Without this import, MSBuild stops at the first props file
+       it finds walking up the tree, and the root settings would be silently ignored. -->
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+
+  <PropertyGroup>
+    <!-- CA1707: test method names use the Given_When_Then underscore convention.
+         This is the xUnit/industry standard for readable test names and is explicitly
+         excluded from test assemblies across the .NET ecosystem. -->
+    <NoWarn>$(NoWarn);CA1707</NoWarn>
+  </PropertyGroup>
+</Project>

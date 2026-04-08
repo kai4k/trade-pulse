@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Serilog.AspNetCore" />
+    <PackageReference Include="System.Reactive" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TradePulse.Infrastructure\TradePulse.Infrastructure.csproj" />
+    <ProjectReference Include="..\TradePulse.ServiceDefaults\TradePulse.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+</Project>
